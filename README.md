@@ -1,7 +1,7 @@
 # -Cognifyz-frontend-internship
 
 ## Overview
-This is a frontend project developed using **HTML**, **CSS**, **SASS**, and **API integration**. The goal of this project was to create a responsive.
+This is a frontend project developed using **HTML**, **CSS**, **SASS**, and **API integration**. The goal of this project was to create a responsive website and get hands on experience.
 
 ## Features
 - Responsive design using CSS Flexbox and Grid
