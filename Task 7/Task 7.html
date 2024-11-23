@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aryan Saini</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f3f4f6; color: #333; margin: 0;">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="position: fixed;">
+        <div class="navbar-brand">Explore India</div>
+        <ul style="list-style: none; margin: 0; padding: 0; display: flex;">
+            <li style="margin: 0 10px;"><a href="#top" id="home-link" style="color: white; text-decoration: none;">Home</a></li>
+            <li style="margin: 0 10px;"><a href="#destinations" style="color: white; text-decoration: none;">Destinations</a></li>
+            <li style="margin: 0 10px;"><a href="#tips" style="color: white; text-decoration: none;">Travel Tips</a></li>
+            <li style="margin: 0 10px;"><a href="#contact-form" id="contact-us" style="color: white; text-decoration: none;">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="bg-warning text-white text-center py-5">
+        <h1 id="top" class="display-4">Explore India</h1>
+        <p class="lead">Discover the beauty, culture, and heritage of India!</p>
+        
+        <button id="Buttonchangecolur" class="btn btn-light btn-lg mt-4">Change Background Color</button>
+    </header>
+
+    <section id="contact-form" class="mt-4 py-5">
+        <h2 class="text-warning text-center text-decoration-underline">Contact Us</h2>
+        <form id="user-form" class="container mt-4" style="max-width: 600px;">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your full name">
+                <span class="error-message text-danger" id="name-error"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address">
+                <span class="error-message text-danger" id="email-error"></span>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea class="form-control" id="message" name="message" placeholder="Write your message here" rows="4"></textarea>
+                <span class="error-message text-danger" id="message-error"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </section>
+    
+
+    <main class="container py-5">
+        <section id="destinations">
+            <h2 class="text-warning text-center text-decoration-underline">Top Destinations</h2>
+
+            <article class="card mb-4">
+                <img src="images/taj-mahal.png" class="card-img-top" alt="Taj Mahal">
+                <div class="card-body text-center">
+                    <h3 class="card-title">Taj Mahal - Agra</h3>
+                    <p class="card-text">The Taj Mahal, one of the Seven Wonders of the World, is a symbol of love and a must-visit destination in India.</p>
+                </div>
+            </article>
+
+            <article class="card mb-4">
+                <img src="images/jaipur.png" class="card-img-top" alt="Jaipur City">
+                <div class="card-body text-center">
+                    <h3 class="card-title">Jaipur - The Pink City</h3>
+                    <p class="card-text">Jaipur, the capital of Rajasthan, is known for its royal palaces, vibrant bazaars, and historic forts.</p>
+                </div>
+            </article>
+
+            <article class="card mb-4">
+                <img src="images/kerala.png" class="card-img-top" alt="Kerala Scenery">
+                <div class="card-body text-center">
+                    <h3 class="card-title">Kerala - God's Own Country</h3>
+                    <p class="card-text">Kerala offers serene backwaters, lush green landscapes, and a rich cultural experience.</p>
+                </div>
+            </article>
+
+            <h2 id="destinations" style="color: #f33434; font-size: 2em; text-decoration: underline; text-align: center; margin-top: 5%;">API Integretion</h2>
+
+            
+            <div id="destination-list"></div>
+        </section>
+
+        <section id="tips" class="mt-5">
+            <h2 class="text-warning">Travel Tips</h2>
+            <p>When visiting India, be sure to:</p>
+            <ul>
+                <li>Carry comfortable clothing suitable for the weather.</li>
+                <li>Stay hydrated and try local cuisines responsibly.</li>
+                <li>Respect local cultures and traditions.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer id="footer" class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Explore India. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
