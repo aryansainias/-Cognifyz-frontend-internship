@@ -1,0 +1,265 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+header {
+    margin-top: 45px; 
+    background-color: #ff7043;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+nav .brand {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav .nav-links li {
+    margin: 0 10px;
+}
+
+nav .nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+.content-section {
+    padding: 20px;
+    display: none;
+}
+
+.content-section.active {
+    display: block;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    font-size: 1em;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #ff7043;
+    outline: none;
+    box-shadow: 0 0 4px rgba(255, 112, 67, 0.5);
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff7043;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e64a19;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+    display: none;
+}
+
+
+#api-data-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+#api-data-container div {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+}
+
+#api-data-container img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.error-message {
+    display: none; 
+    color: red;   
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav .brand {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+
+    nav .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav .nav-links li {
+        margin: 5px 0;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    .content-section h2 {
+        font-size: 1.5em;
+    }
+
+    .content-section h3 {
+        font-size: 1.2em;
+    }
+
+    footer p {
+        font-size: 0.8em;
+    }
+
+    #api-data-container div {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav .nav-links {
+        flex-direction: column;
+    }
+
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    header p {
+        font-size: 1.1em;
+    }
+
+    .content-section h2 {
+        font-size: 1.8em;
+    }
+
+    .content-section h3 {
+        font-size: 1.4em;
+    }
+
+    #api-data-container div {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    nav {
+        justify-content: space-between;
+    }
+
+    .content-section h2 {
+        font-size: 2em;
+    }
+
+    .content-section h3 {
+        font-size: 1.6em;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
+
+    #api-data-container div {
+        width: 250px;
+    }
+}
